@@ -1,0 +1,48 @@
+/*#creating grid system*/
+.container{
+    display: grid;
+    grid-template-areas:
+            "header content"
+            "sidebar content"
+            "sidebar footer";
+    grid-template-columns: 1fr 3fr;
+    grid-auto-rows: 100px;
+    grid-gap: 14px;
+
+}
+
+
+header{
+    grid-area: header;
+    background-color: #cd7070;
+    border-radius: 4px;
+}
+
+section{
+    grid-area: content;
+    background-color: cadetblue;
+    border-radius: 4px;
+
+
+}
+
+aside{
+    grid-area: sidebar;
+    background-color: yellowgreen;
+    border-radius: 4px;
+
+
+
+}
+
+footer{
+    grid-area: footer;
+    background-color: antiquewhite;
+    border-radius: 4px;
+
+}
+
+
+.fontChange{
+    font-size: 1px;
+}
